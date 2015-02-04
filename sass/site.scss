@@ -1,0 +1,68 @@
+header {
+   padding: 50px 0px;
+   @media (min-width: $width-small) {
+      padding: 60px 0px;
+   }
+   @media (min-width: $width-medium) {
+      padding: 80px 0px;
+   }
+}
+
+img {
+   &.branding-logo{
+      width: 200px;
+      @media (min-width: $width-small) {
+         width: 300px;
+      }
+      @media (min-width: $width-medium) {
+         width: 400px;
+      }
+   }
+}
+
+.branding-band {
+   margin-bottom:20px;
+   padding:10px;
+   background-color: darken($grey, 5%);
+   ul {
+      h5 {
+         letter-spacing: 1px;
+         display: inline;
+         font-size: 13px;
+         color: darken($grey, 30%);
+         margin: 0px;
+         line-height: 1px;
+      }
+   }
+}
+
+section.form {
+   padding-bottom:50px;
+   background-color: $grey;
+   & h1 {
+      margin-bottom:40px;
+      text-align: center;
+      margin-left:0px;
+      margin-right:0px;
+      font-size: 1.6em;
+      line-height: 1.3em;
+   }
+}
+
+
+
+
+
+footer {
+   height: 100%;
+   padding: 80px 0px 30px 0px;
+   background-color: $white;
+   & ul.inline li:first-child,
+   & ul.inline li:last-child {
+      padding: 0px 10px;
+   }
+   .terms {
+      text-align: center;
+      margin-top:40px;
+   }
+}

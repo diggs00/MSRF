@@ -1,0 +1,66 @@
+// Reset the box-sizing CSS Box Model
+
+*,
+*:before,
+*:after {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+
+// Grid
+
+.container {
+   width: 100%;
+   max-width: 1320px;
+   margin: 0 auto;
+}
+
+.container-inner {
+   width: 100%;
+   max-width: 600px;
+   margin: 0 auto;
+}
+
+.row {
+   margin-left:  20px;
+   margin-right: 20px;
+
+   &:before {
+      content: " ";
+      display: table;
+   }
+   &:after {
+      content: " ";
+      display: table;
+      clear: both;
+   }
+}
+
+.col-full,
+.col-two-thirds,
+.col-half,
+.col-third,
+.col-fourth {
+   float: left;
+   padding-left: 0px;
+   padding-right: 0px;
+   margin: 0px;
+}
+
+.col-full {
+   width: 100%;
+}
+.col-two-thirds {
+   width: 66.7%;
+}
+.col-half {
+   width: 50%;
+}
+.col-third {
+   width: 33.3%;
+}
+.col-fourth {
+   width: 25%;
+}
