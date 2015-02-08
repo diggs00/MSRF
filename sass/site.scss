@@ -57,9 +57,8 @@ footer {
    height: 100%;
    padding: 80px 0px 30px 0px;
    background-color: $white;
-   & ul.inline li:first-child,
-   & ul.inline li:last-child {
-      padding: 0px 10px;
+   & ul.inline li:first-child{
+      padding: 0px 10px 0px 0px;
    }
    .terms {
       text-align: center;
